@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5dd0cc1318.js" crossorigin="anonymous"></script>
+    <title>Boishali's Portfolio</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(13, 0, 43);
+            color: white;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+        }
+        .nav_left ul{
+            display: flex;
+        }
+        .nav_left ul li{
+            list-style: none;
+            padding: 50px 20px 0px 20px;
+        }
+        .nav_left ul li a{
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        }
+        .nav_left ul li a:hover{
+            border-bottom: 2px solid rgb(206, 160, 248);
+            color:rgb(206, 160, 248);
+            font-size: 1.01rem;
+        }
+        .nav_right{
+            display: flex;
+            padding-top: 20px;
+        }
+        .nav_right .dp{
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            background-image: url(dp.jpg);
+            background-size: cover;
+            cursor: pointer;
+        }
+        .nav_right p{
+            padding: 25px 20px 0 0px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .content{
+            background-color: aliceblue;
+            height: 85vh;
+            width: 97vw;
+            margin: 10px 0 0 20px;
+            border-radius: 10px;
+            display: flex;
+        }
+        .content .detail{
+            height:60vh;
+            width:70vw;
+            margin: 10%;
+        }
+        .content .photo{
+            margin: 25px 50px;
+            background-image: url(img.jpg);
+            background-size: cover;
+            height: 55vh;
+            width:25vw;
+            border: 15px solid rgb(229, 228, 160);
+            border-bottom: 60px solid rgb(228, 227, 169);
+            border-radius: 10px;
+        }
+        .content .detail #hi{
+            font-size: 100px;
+            color: black;
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            animation-name: animation1;
+            animation-duration: 5s;
+        }
+        @keyframes animation1{
+            from {
+                transform: translateY(-20%);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+        .content .detail #intro{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 60px;
+            color: rgb(27, 27, 90);
+        }
+        .content .detail #intro #name{
+            color: rgb(67, 67, 122);
+            font-weight: bold;
+        }
+        .content .detail #description{
+            font-size: 30px;
+            color: rgb(76, 98, 117);
+            font-style: italic;
+            animation-name: animation2;
+            animation-duration: 4s;
+        }
+        @keyframes animation2 {
+            from {
+                transform: translateX(-10%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+        .content .detail .social{
+            color: rgb(70, 46, 92);
+            font-size: 25px;
+        }
+        .content .detail .social ul li{
+            list-style: none;
+            display: inline-flex;
+            cursor: pointer;
+            margin-top: 8px;
+            padding: 8px;
+            border: 1px solid rgb(70, 46, 92);
+            border-radius: 50%;
+        }
+        .content .detail .social ul li:hover{
+            border: 1px solid violet;
+            border-radius: 50%;
+            color: violet;
+        }
+        .about{
+            display: flex;
+            justify-content: space-between;
+            margin: 90px 20px 100px 20px;
+        }
+        .about #img{
+            background-image: url(img.jpg);
+            width: 25vw;
+            height: 50vh;
+            border-radius: 50%;
+            box-shadow: 0 0 10px #fff;
+            background-size: cover;
+        }
+        .about #about li{
+            list-style: none;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .about #about h1, .about #about h2{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .about #about p{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .projectdetail{
+            margin-top: 100px;
+        }
+        .projectdetail .project{
+            display: flex;
+            margin-top: 30px;
+        }
+        .projectdetail .project .subproject{
+            height: 30vh;
+            width: 25vw;
+            padding: 20px;
+            border: 1px solid aqua;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #fff;
+            margin: 30px;
+            background-color: rgb(0, 0, 0);
+        }
+        .contactdetail .contact .contactinfo{
+            margin-bottom: 50px;
+        }
+        .contactdetail .contact .contactinfo p{
+            margin: 10px 530px;
+            cursor: pointer;
+        }
+        .contactdetail .contact .contactinfo p:hover{
+            color: aqua;
+        }
+        .contactdetail .contact .social ul{
+            margin-bottom: 50px;
+            margin-left: 570px;
+        }
+        .contactdetail .contact .social ul li{
+            list-style: none;
+            display: inline-flex;
+            cursor: pointer;
+            margin-top: 8px;
+            padding: 8px;
+            border: 1px solid rgb(70, 46, 92);
+            border-radius: 50%;
+            font-size: 20px;
+        }
+        .contactdetail .contact .social ul li:hover{
+            border: 1px solid violet;
+            border-radius: 50%;
+            color: violet;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav_left">
+            <ul>
+                <li><a href="#home" style="border-bottom: 2px solid white;">Home</a></li>
+                <li><a href="#aboutme">About</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#contact">Contact me</a></li>
+            </ul>
+        </div>
+        <div class="nav_right">
+            <p>BOISHALI GHOSH</p>
+            <div class="dp"></div>
+        </div>
+    </nav>
+    <div class="content" id="home">
+        <div class="detail">
+            <p id="hi">Hi</p>
+            <p id="intro">I am <span id="name">Boishali Ghosh</span></p>
+            <p id="description">A passionate Web Developer from Assam India</p>
+        <div class="social">
+            <ul>
+                <li><i class="fa-brands fa-linkedin"></i></li>
+                <li><i class="fa-brands fa-facebook"></i></li>
+                <li><i class="fa-brands fa-instagram"></i></li>
+                <li><i class="fa-brands fa-github"></i></li>
+            </ul>
+        </div>
+        </div>
+        <div class="photo"></div>
+    </div>
+    <hr  style="margin-top: 50px;"  id="aboutme">
+    <div class="about">
+        <section id="img">
+        </section>
+        <section id="about">
+            <br><h1>About Me</h1><br>
+            <p>Hi, I'm Boishali Ghosh, a passionate computer engineer with a love for coding and creating innovative solutions.</p>
+            <p>I hold a my Masters and Bachelors Degree in Computer Application from University of Science and Technology Meghalaya</p>
+            <br><h2>Skills</h2><br>
+            <ul>
+                <li>Programming Languages: JavaScript, PHP, Java, C, C++</li>
+                <li>Web Development: HTML, CSS, JavaScript, PHP</li>
+                <li>Database Management: MySQL, phpMyAdmin</li>
+            </ul>
+            <br><h2>Personal Interests</h2><br>
+            <p>In my free time, I enjoy doing sketching, editing (photo and video), and photography</p>
+            <br><h2>Achievements</h2><br>
+            <ul>
+                <li>1. I got GOLD MEDAL in my Bachelor Degree Program for achieving highest marks in my department </li>
+                <li>2. I won a consolation price for Coding competition at University of Science and Technology Meghalaya </li>
+                <li>3. I got a certificate and price for an Art Competition at Prashanti Welfare Society.</li>
+                <li>4. Won 1st price in Drama Competition at University of Science and Technology Meghalaya.</li>
+            </ul>
+        </section>
+    </div>
+    <hr>
+    <div class="projectdetail" id="project">
+    <center><h1>PROJECTS</h1></center>
+    <div class="project">
+        <div class="subproject">
+            <center>
+                <h3>Financial Management System</h3>
+                <p>Globotech Infrastructure Pvt. Ltd.</p>
+                <p>Duration: 6 Months</p>
+                <br>
+                <p>A web-based application that help them to calculate and store their financial transaction in a better way</p>
+                <br>
+                <p>Skill used: PHP, HTML, CSS, JavaScript</p>
+            </center>
+        </div>
+        <div class="subproject">
+            <center>
+                <h3>Risk Analysis System</h3>
+                <p>Globotech Infrastructure Pvt. Ltd.</p>
+                <p>Duration: 4 Months</p>
+                <br>
+                <p>A web-based application that analysis the Risk involved in the organization by analysing the MPR (Monthly Progress Report) </p>
+                <br>
+                <p>Skill used: PHP, HTML, CSS, JavaScript</p>
+            </center>
+        </div>
+        <div class="subproject">
+            <center>
+                <h3>TrancVoice: Bridging Auditory Barriers for Individuals with Hearing Challenges</h3>
+                <p>University of Science and Technology Meghalaya</p>
+                <p>Duration: 6 Months</p>
+                <br>
+                <p>A mobile application that helps individuals with hearing challenges to communicate effectively</p>
+                <br>
+                <p>Skill used: PHP, HTML, CSS, JavaScript</p>
+            </center>
+        </div>
+    </div>
+    </div>
+    <div class="contactdetail" id="contact">
+    <center><h1>CONTACT</h1></center>
+    <div class="contact">
+        <div class="contactinfo">
+            <p><i class="fa-solid fa-envelope"></i> : ghosh.neha2002@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i> : +91 6003177203</p>
+        </div>
+            <div class="social">
+                <ul>
+                    <li><i class="fa-brands fa-linkedin"></i></li>
+                    <li><i class="fa-brands fa-facebook"></i></li>
+                    <li><i class="fa-brands fa-instagram"></i></li>
+                    <li><i class="fa-brands fa-github"></i></li>
+                </ul>
+            </div>
+    </div>
+</div>
+</body>
+</html>
